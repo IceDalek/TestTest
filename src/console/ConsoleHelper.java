@@ -14,8 +14,8 @@ public class ConsoleHelper {
     public void writeMessage(String message){
         System.out.println(message);
     }
-    public void nonStaticMethod(){
-        System.out.println("non static method called");
+    public static void StaticMethod(){
+        System.out.println("static method called");
     }
     private ConsoleHelper(){}
     private static ConsoleHelper instance = new ConsoleHelper();

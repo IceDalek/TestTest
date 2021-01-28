@@ -1,13 +1,14 @@
-import Shapes.Round;
-import console.ConsoleHelper;
+import myArrays.DynamicArray;
 
 public class Main {
     public static void main(String[] args) {
-
-        ConsoleHelper consoleHelper = ConsoleHelper.getInstance();
-        ConsoleHelper consoleHelper1 = ConsoleHelper.getInstance();
-        System.out.println(consoleHelper);
-        System.out.println(consoleHelper1);
+        DynamicArray dynamicArray = new DynamicArray();
+        dynamicArray.add(10);
+        dynamicArray.add(101);
+        dynamicArray.add(101);
+        dynamicArray.add(101);
+        System.out.println(dynamicArray.size());
+        System.out.println(dynamicArray.get(1));
 
     }
 }
